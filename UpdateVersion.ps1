@@ -15,6 +15,5 @@ $MinorNumber | Add-Content $env:workspace\$env:Deployment_Details_File.propertie
 $BuildNumber | Add-Content $env:workspace\$env:Deployment_Details_File.properties
 $RevisionNumber | Add-Content $env:workspace\$env:Deployment_Details_File.properties
 
-cd $env:workspace\$env:SVN_FOLDER_NAME
-cd 'New Design\Workspace\XaftServer'
+cd $env:workspace\$env:Git_Folder
 cmd.exe /c mvn -e versions:set -DnewVersion="$VersionNumber1"
