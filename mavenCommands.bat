@@ -1,2 +1,3 @@
 cd %WORKSPACE%/%Git_Folder%
-mvn clean compile install
+Set goal=%1
+mvn %goal%
